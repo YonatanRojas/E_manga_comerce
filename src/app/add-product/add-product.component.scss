@@ -1,0 +1,117 @@
+.header__main{
+  display: flex;
+  background: rgba(106, 0, 116, 0.89);
+  border-radius: 5px;
+}
+
+.logo{
+  margin: 1rem;
+  width: 10%;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
+.logo:hover{
+  margin: 1% 0;
+  width: 8%;
+  box-shadow: 0px 0 5px 10px rgb(187, 51, 187);
+}
+
+.header__main{
+  background: rgba(106, 0, 116, 0.89);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0 0.7rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navegation__bar{
+  color: #fff;
+  width: 18rem;
+  padding: 6px;
+  border-radius: px solid none;
+  border-radius: px solid none;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: rgb(161, 4, 140);
+}
+
+.search{
+  width: 70%;
+}
+
+.home{
+  padding: 0.5rem;
+  border-radius: 2rem;
+  background-color: aqua;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.home:hover{
+  background-color: rgb(10, 189, 189);
+  box-shadow: 0 0 10px 5px purple;
+}
+
+// main section with the add products
+
+.main__container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(rgb(179, 174, 174),rgb(235, 225, 225),rgb(155, 153, 153));
+}
+
+.product__price ,.product__name ,.categori
+,.img__income ,.description__prouct{
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+}
+
+.product__price ,.product__name ,.categori
+,.img__income{
+  width: 20rem;
+}
+
+.description__product{
+  resize: none;
+  width: 21rem;
+  background: none;
+  border-radius: 1rem;
+}
+
+.add__product, .redireccionar{
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1rem;
+  background: rgb(42, 74, 255);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  transition-duration: 1s;
+}
+.add__product:hover, .redireccionar:hover{
+  border: 1px solid black;
+  box-shadow: 0 0 5px 3px blue;
+}
+
+@media screen and(max-width: 515px){
+  .home{
+    padding: 4px;
+  }
+  .navegation__bar{
+    width: auto;
+  }
+}

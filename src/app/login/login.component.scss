@@ -1,0 +1,127 @@
+*{
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+//header
+
+.header__main{
+  display: flex;
+  background: rgba(106, 0, 116, 0.89);
+  border-radius: 5px;
+}
+
+img{
+  margin: 1rem;
+  width: 10%;
+  border-radius: 50%;
+  transition-duration: 1s;
+}
+img:hover{
+  margin: 1% 0;
+  width: 8%;
+  box-shadow: 0px 0 5px 10px rgb(187, 51, 187);
+}
+
+.header__main{
+  background: rgba(106, 0, 116, 0.89);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0 0.7rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navegation__bar{
+  color: #fff;
+  width: 18rem;
+  padding: 3px;
+  border-radius: px solid none;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: rgb(161, 4, 140);
+}
+
+.search{
+  width: 70%;
+  margin-right: 10%;
+}
+
+//body login
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+h4:hover{
+  border-bottom: 2px solid #333;
+}
+
+.login__container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgb(206, 204, 204);
+  border-radius: 10px;
+  margin: 1rem 0;
+  width: 50%;
+  height: 25rem;
+  padding: 1rem 0;
+}
+
+.mail, .password{
+  width: 50%;
+  margin: 0 0 1rem 0;
+  background: none;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.button{
+  width: 10rem;
+  border: none;
+  background-color: rgba(4, 4, 189, 0.726);
+  border-radius: 1rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: blue;
+  box-shadow: 0 0 15px 1px black;
+}
+
+a{
+  text-decoration: none;
+  transition-duration: 1s;
+}
+a:hover{
+  border-bottom: 4px solid black;
+}
+
+@media screen and(max-width:1095px){
+  .product__item{
+    width: 45%;
+  }
+}
+
+@media screen and(max-width: 560px){
+  .login__container{
+    width: 95%;
+  }
+}

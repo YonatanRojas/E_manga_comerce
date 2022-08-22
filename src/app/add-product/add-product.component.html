@@ -1,0 +1,28 @@
+<header class="header__main">
+  <img class="logo" src="../../assets/img/logo_main_page.jpg" alt="logo">
+  <div class="search">
+    <form action="#">
+      <input class="navegation__bar" type="text" placeholder="¿Que desea Buscar?" name="search">
+      <button>
+        <i class="fa fa-magnifying-glass fa-5x"></i>
+        Buscar
+      </button>
+    </form>
+  </div>
+  <button class="home"
+  [routerLinkActive]="['active']"
+  [routerLink]="['/product']">Menu Administrador</button>
+</header>
+
+<main class="main__container" [formGroup]="formulario">
+  <h1 class="title">Agregar Nuevo Producto</h1>
+  <input type="text" class="img__income" placeholder="Ingrese el URL de la imagen del producto" formControlName="image">
+  <input type="text" class="categori" placeholder="Ingrese la categoria" formControlName="categori">
+  <input type="text" class="product__name" placeholder="ingrese el nombre del producto" formControlName="name">
+  <input type="text" class="product__price" placeholder="Ingrese el precio" formControlName="price">
+  <textarea name="description__product" cols="40" rows="10" class="description__product"
+  placeholder="ingrese la descripcion del producto" formControlName="description">
+  </textarea>
+  <button class="add__product" type="submit" (click)="onSubmit()">Agregar producto</button>
+  <button class="redireccionar" type="button" [routerLinkActive]="['active']" [routerLink]="['/home']">HOME</button>
+</main>
